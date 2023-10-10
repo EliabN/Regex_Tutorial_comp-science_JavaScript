@@ -1,6 +1,6 @@
-# Title (replace with your title)
+# Email Regex Tutorial; Computer Science for JavaScript
 
-This is a tutorial that explains how a specific regular expression, or regex, functions by breaking down each part of the expression and describing what it does.
+This is a tutorial that explains how an Email regular expression, or regex, functions by breaking down each part of the expression and describing what it does.
 
 ## Summary
 
