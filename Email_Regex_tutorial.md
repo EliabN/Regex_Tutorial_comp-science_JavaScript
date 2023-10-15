@@ -76,10 +76,6 @@ Character classes in regular expressions (regex) are a way to represent a group 
 * Matching a single characters(white) present in the list in 3rd Group Construct **`[a-z`\\.`]`*
     * `\.` matches the character . literally `(case sensitive)`
 
-### Bracket Expressions
-
-### Character Classes
-
 ### The OR Operator
 
 ### Flags
