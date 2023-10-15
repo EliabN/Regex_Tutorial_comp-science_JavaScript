@@ -78,13 +78,37 @@ Character classes in regular expressions (regex) are a way to represent a group 
 
 ### The OR Operator
 
+The OR operator in regex is represented by the vertical bar `|`. It is not include in the example expression used, however allows you to specify multiple alternatives in a regex pattern. For example, `cat|dog matches either "cat" or "dog." (It's a way to express "OR" logic in your pattern)`
+
 ### Flags
 
+Flags in regex (regular expressions) are optional settings that modify how a regex pattern is applied. Common flags include:
+
+
+* **Case-Insensitive (i):** Makes the pattern match regardless of letter case. `For example, /apple/i matches "apple," "Apple," and "aPpLe."`
+
+* **Global (g):** Causes the pattern to match all occurrences in the input text, not just the first one.
+
+* **Multiline (m):** Alters the behavior of **^ and $** to match the start and end of each line within the input text rather than the entire text.
+
+> **Important**: Although these were not used in the example, Flags provide flexibility and control over how regex patterns are matched in the input text 
+### Character Escapes
+
+Character escapes in regex allow you to match specific characters with special meanings as literal characters. For example, `\\` matches a backslash, and `\.` matches a period. 
+
+* Example used in the expression being focused on; 
+    * `\.` matches the character . literally `(case sensitive)`
+
+> **Important**: Using character escapes is a way to match characters that would otherwise have special regex meanings as plain text.
 
 ## Author
+Eliab Lumu N
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+* [GitHub](https://github.com/EliabN)
+* Email - eliabn66@gmail.com
+* [Portfolio](https://eliabn.github.io/Portfolio_Website/)
 
 ## Resource
-[how to create a gist](https://help.github.com/en/github/writing-on-github/creating-gists)
-[video on how to use gists](https://www.youtube.com/watch?v=wc2NlcWjQHw).
+* [how to create a gist](https://help.github.com/en/github/writing-on-github/creating-gists)
+* [video on how to use gists](https://www.youtube.com/watch?v=wc2NlcWjQHw).
+* [Regex Tutorial: Matching a Username](https://coding-boot-camp.github.io/full-stack/computer-science/regex-tutorial).
