@@ -25,7 +25,12 @@ A **regex**, which is short for **regular expression**, is a sequence of charact
 
 ### Anchors
 
+Anchors in regex are used to assert a specific position within the text. Two common anchors are:
 
+* `^ (Caret)`: Matches the start of a line or string.
+* `$ (Dollar)`: Matches the end of a line or string.
+
+>**Important:** These anchors are used to specify where in the text a pattern must occur, ensuring it's either at the beginning (^) or end ($) of the line or string.
 
 ### Quantifiers
 
@@ -43,7 +48,7 @@ In the Email expression focused, there are four **Quantifiers**
 ### Grouping Constructs
 
 
-In regular expressions (regex), **grouping constructs** are used to group together characters, subpatterns, or expressions. They serve several purposes:
+In regular expressions (regex), **grouping constructs** are used to group together characters, sub-patterns, or expressions. They serve several purposes:
 
 * Parentheses () are the most common grouping construct. `For example, (abc)+ captures and references repetitions of "abc" in a string.`
 
