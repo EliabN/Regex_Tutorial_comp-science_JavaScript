@@ -23,6 +23,12 @@ A **regex**, which is short for **regular expression**, is a sequence of charact
 
 ## Regex Components
 
+Regex components, also known as regex metacharacters or special characters, are fundamental elements used in regular expressions to define patterns. E.g. `Literals:` Characters that match themselves, `like a, 1, or @`
+
+**Some common regex components include:** Anchors, Quantifiers, Grouping Constructs, Character Classes, Alternation, Escape Sequences which will be covered in this tutorial.
+
+>These components are the building blocks for creating complex regex patterns that can be used to search, validate, or manipulate text based on specific patterns.
+
 ### Anchors
 
 Anchors in regex are used to assert a specific position within the text. Two common anchors are:
