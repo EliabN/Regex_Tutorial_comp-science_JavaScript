@@ -25,6 +25,8 @@ A **regex**, which is short for **regular expression**, is a sequence of charact
 
 ### Anchors
 
+
+
 ### Quantifiers
 
 In **Regex** Quantifiers are used to quantify how many times a part of your regular expression should be repeated. 
@@ -51,30 +53,36 @@ In regular expressions (regex), **grouping constructs** are used to group togeth
 
 ### Bracket Expressions
 
-Bracket expressions in regular expressions (regex) are used to define a character class, which matches any single character from the characters listed within the brackets. For example,  `[0-9] matches any digit`.
+Bracket expressions in regex are used to define a character class, which matches any single character from the characters listed within the brackets. For example,  `[0-9] matches any digit`.
 
-* Matching characters(white) present in the list in 1st Group Construct **`[`a-z0-9`_\.-]`**
-    * `a-z` matches a single character in the range between a and z `(case sensitive)`
-    * `0-9` matches a single character in the range between 0 and 9 `(case sensitive)`
+* Matching characters present in the list in 1st Group Construct **[`a-z0-9_\.-`]**
 
+* Matching characters present in the list in 2nd Group Construct **[`\da-z\.-`]**
+    
+* Matching characters present in the list in 3rd Group Construct **[`a-z\.`]**
 
 ### Character Classes
 
 Character classes in regular expressions (regex) are a way to represent a group of characters with a single character class symbol. For example: `\w matches any word character (letters, digits, or underscore).`
 
-* Matching a single characters(white) present in the list in 1st Group Construct **`[a-z0-9`_\\.-`]`**
-    * `_ `matches the character _ literally `(case sensitive)`
-    * `\.` matches the character . literally `(case sensitive)`
-    * `-` matches the character - literally `(case sensitive)`
+* Matching a single characters present in the list in 1st Group Construct **[`a-z0-9_\.-`]`**
+    * `a-z` matches a single character in the `range between a and z` (case sensitive)
+    * `0-9` matches a single character in the `range between 0 and 9` (case sensitive)
+    * `_ `matches the `character _ literally` (case sensitive)
+    * `\.` matches the `character . literally` (case sensitive)
+    * `-` matches the `character - literally` (case sensitive)
 <br>
 <br>
-* Matching a single characters(white) present in the list in 2st Group Construct **`[\da-z`\\.-`]`*
-    * `\.` matches the character . literally `(case sensitive)`
-    * `-` matches the character - literally `(case sensitive)`
+* Matching a single characters present in the list in 2st Group Construct **[`\da-z\.-`]`*
+    * `a-z` matches a single character in the range between a and z (case sensitive)
+    * `\d` matches a `digit (equivalent to [0-9])`
+    * `\.` matches the `character . literally` (case sensitive)
+    * `-` matches the `character - literally` (case sensitive)
 <br>
 <br>
-* Matching a single characters(white) present in the list in 3rd Group Construct **`[a-z`\\.`]`*
-    * `\.` matches the character . literally `(case sensitive)`
+* Matching a single characters present in the list in 3rd Group Construct **[`a-z\.`]*
+    * `a-z` matches a single character in the range between a and z (case sensitive)
+    * `\.` matches the character . literally (case sensitive)
 
 ### The OR Operator
 
@@ -97,7 +105,7 @@ Flags in regex (regular expressions) are optional settings that modify how a reg
 Character escapes in regex allow you to match specific characters with special meanings as literal characters. For example, `\\` matches a backslash, and `\.` matches a period. 
 
 * Example used in the expression being focused on; 
-    * `\.` matches the character . literally `(case sensitive)`
+    * `\.` matches the character . literally (case sensitive)
 
 > **Important**: Using character escapes is a way to match characters that would otherwise have special regex meanings as plain text.
 
